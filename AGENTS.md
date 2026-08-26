@@ -56,6 +56,8 @@ Key agent skills are in `.agents/skills/`. Use them via the `skill` tool when re
 
 **Flow:** `feature/*` → PR into `develop` → PR into `main`
 
+Full workflow reference: `docs/GITFLOW_AND_CICD.md`
+
 ## CI/CD
 
 - `.github/workflows/flutter-ci.yml` — runs `flutter analyze` + `flutter test` on PRs to `main`/`develop`, then builds Android APK and iOS (no codesign).
