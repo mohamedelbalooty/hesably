@@ -44,6 +44,24 @@ Key agent skills are in `.agents/skills/`. Use them via the `skill` tool when re
 - **AI**: `ai-product`, `gemini-api-dev`, `gemini-api-integration`
 - **Other**: `clean-code`, `frontend-developer`
 
+## Branching model
+
+| Branch | Purpose | Deploys to |
+|--------|---------|------------|
+| `main` | Production-ready | Production Supabase |
+| `develop` | Integration branch | Staging Supabase |
+| `feature/*` | New features, branch off `develop` | — |
+| `fix/*` | Bug fixes, branch off `develop` | — |
+| `hotfix/*` | Urgent fixes, branch off `main` | Production |
+
+**Flow:** `feature/*` → PR into `develop` → PR into `main`
+
+## CI/CD
+
+- `.github/workflows/flutter-ci.yml` — runs `flutter analyze` + `flutter test` on PRs to `main`/`develop`, then builds Android APK and iOS (no codesign).
+- `.github/workflows/supabase-migrations.yml` — validates migrations on PRs; auto-deploys to staging on `develop` push, production on `main` push.
+- PR template at `.github/pull_request_template.md`.
+
 ## Conventions
 
 - Use `supabase-postgres-best-practices` skill before writing or changing any Postgres schema, RLS policies, migrations, or SQL.
