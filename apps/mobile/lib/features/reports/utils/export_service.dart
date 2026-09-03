@@ -71,6 +71,7 @@ class ExportService {
     final file = File('${dir.path}/hesably_report.pdf');
     await file.writeAsBytes(bytes);
 
+    // ignore: deprecated_member_use
     await Share.shareXFiles([XFile(file.path)], text: 'Hesably Financial Report');
   }
 
@@ -104,6 +105,7 @@ class ExportService {
     final file = File('${dir.path}/hesably_report.csv');
     await file.writeAsString(csv);
 
+    // ignore: deprecated_member_use
     await Share.shareXFiles([XFile(file.path)], text: 'Hesably Financial Report CSV');
   }
 }

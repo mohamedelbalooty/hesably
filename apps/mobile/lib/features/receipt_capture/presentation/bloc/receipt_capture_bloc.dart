@@ -30,6 +30,13 @@ class CaptureReceiptImage extends ReceiptCaptureEvent {
   List<Object?> get props => [localPath];
 }
 
+class ResetReceiptCapture extends ReceiptCaptureEvent {
+  const ResetReceiptCapture();
+
+  @override
+  List<Object?> get props => [];
+}
+
 class UploadReceipt extends ReceiptCaptureEvent {
   final String businessId;
   const UploadReceipt(this.businessId);
@@ -92,6 +99,14 @@ class ReceiptCaptureBloc extends Bloc<ReceiptCaptureEvent, ReceiptCaptureState> 
   ReceiptCaptureBloc(this._receiptRepository) : super(const ReceiptCaptureInitial()) {
     on<SelectTransactionType>((event, emit) {
       emit(ReceiptCaptureTypeSelected(event.type));
+    });
+
+    on<ResetReceiptCapture>((event, emit) {
+      if (state.transactionType != null) {
+        emit(ReceiptCaptureTypeSelected(state.transactionType!));
+      } else {
+        emit(const ReceiptCaptureInitial());
+      }
     });
 
     on<CaptureReceiptImage>((event, emit) async {

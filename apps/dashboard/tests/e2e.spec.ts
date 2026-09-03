@@ -62,6 +62,7 @@ test.describe('Dashboard E2E', () => {
         redirectTo: "http://localhost:3000/auth/callback",
       },
     });
+    if (linkErr || !linkRes?.properties) throw linkErr ?? new Error("Failed to generate magic link");
     expect(linkErr).toBeNull();
     
     const callbackUrl = `http://localhost:3000/auth/callback?token_hash=${linkRes.properties.hashed_token}&type=magiclink`;
@@ -75,5 +76,42 @@ test.describe('Dashboard E2E', () => {
 
     // Wait for the business name to be visible (testing RTL/Arabic support & data loading)
     await expect(page.locator('text=سوبرماركت الأمل').first()).toBeVisible({ timeout: 10000 });
+  });
+
+  test('Unlinked account is blocked with clear message', async ({ page }) => {
+    const unlinkedEmail = "unlinked.user@hesably.com";
+
+    // Clean up if exists
+    const { data: userList } = await adminClient.auth.admin.listUsers();
+    const existing = userList?.users?.find((u) => u.email === unlinkedEmail);
+    if (existing) {
+      await adminClient.auth.admin.deleteUser(existing.id);
+    }
+
+    // Create user without business
+    const { data: unlinkedUserData } = await adminClient.auth.admin.createUser({
+      email: unlinkedEmail,
+      email_confirm: true,
+    });
+
+    const { data: linkRes, error: linkErr } = await adminClient.auth.admin.generateLink({
+      type: "magiclink",
+      email: unlinkedEmail,
+      options: {
+        redirectTo: "http://localhost:3000/auth/callback",
+      },
+    });
+    if (linkErr || !linkRes?.properties) throw linkErr ?? new Error("Failed to generate magic link");
+
+    const callbackUrl = `http://localhost:3000/auth/callback?token_hash=${linkRes.properties.hashed_token}&type=magiclink`;
+    await page.goto(callbackUrl);
+
+    // Verify unlinked block message appears
+    await expect(page.locator('text=الحساب غير مرتبط بنشاط تجاري').first()).toBeVisible({ timeout: 10000 });
+
+    // Cleanup
+    if (unlinkedUserData?.user) {
+      await adminClient.auth.admin.deleteUser(unlinkedUserData.user.id);
+    }
   });
 });
