@@ -47,7 +47,7 @@ supabase db push
 ### 3. Run the Flutter app
 
 ```bash
-cd apps/mobile/dashboard
+cd apps/mobile
 flutter pub get
 flutter run
 ```
