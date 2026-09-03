@@ -1,0 +1,11 @@
+{
+  "name": "hesably",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "supabase": "supabase"
+  },
+  "devDependencies": {
+    "supabase": "^2.116.0"
+  }
+}

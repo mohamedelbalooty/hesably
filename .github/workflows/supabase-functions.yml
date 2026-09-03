@@ -1,32 +1,31 @@
-name: Supabase Migrations
+name: Supabase Edge Functions
 
 on:
   pull_request:
     branches: [main, develop]
     paths:
-      - "supabase/**"
+      - "supabase/functions/**"
   push:
     branches: [main, develop]
     paths:
-      - "supabase/**"
+      - "supabase/functions/**"
 
 jobs:
   validate:
-    name: Validate Migrations
+    name: Validate Edge Functions
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: supabase/setup-cli@v1
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
         with:
-          version: latest
-      - run: supabase db push --dry-run
-        working-directory: supabase
-      - run: supabase start
-        working-directory: supabase
-      - run: supabase test db
-        working-directory: supabase
+          deno-version: v1.x
+      - run: deno lint
+        working-directory: supabase/functions
+      # If tests exist:
+      # - run: deno test --allow-all
+      #   working-directory: supabase/functions
 
-  # Deploy migrations on push to main (production)
   deploy-production:
     name: Deploy to Production
     runs-on: ubuntu-latest
@@ -38,13 +37,11 @@ jobs:
       - uses: supabase/setup-cli@v1
         with:
           version: latest
-      - run: supabase db push
-        working-directory: supabase
+      - run: supabase functions deploy
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
           SUPABASE_PROJECT_ID: ${{ secrets.SUPABASE_PROJECT_ID }}
 
-  # Deploy migrations on push to develop (staging)
   deploy-staging:
     name: Deploy to Staging
     runs-on: ubuntu-latest
@@ -56,8 +53,7 @@ jobs:
       - uses: supabase/setup-cli@v1
         with:
           version: latest
-      - run: supabase db push
-        working-directory: supabase
+      - run: supabase functions deploy
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
-          SUPABASE_STAGING_PROJECT_ID: ${{ secrets.SUPABASE_STAGING_PROJECT_ID }}
+          SUPABASE_PROJECT_ID: ${{ secrets.SUPABASE_STAGING_PROJECT_ID }}
