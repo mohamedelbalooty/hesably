@@ -1,0 +1,8 @@
+{
+  "app_name": "Hesably",
+  "auth_login": "Login",
+  "auth_phone_hint": "Phone Number",
+  "auth_otp_hint": "OTP Code",
+  "onboarding_business_name": "Business Name",
+  "onboarding_business_type": "Business Type"
+}

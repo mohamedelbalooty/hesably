@@ -1,0 +1,8 @@
+{
+  "app_name": "حسابي",
+  "auth_login": "تسجيل الدخول",
+  "auth_phone_hint": "رقم الهاتف",
+  "auth_otp_hint": "رمز التحقق",
+  "onboarding_business_name": "اسم العمل",
+  "onboarding_business_type": "نوع العمل"
+}
