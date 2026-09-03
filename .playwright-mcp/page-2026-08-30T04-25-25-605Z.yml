@@ -1,0 +1,102 @@
+- generic:
+  - button [ref=f67e204] [cursor=pointer]
+  - alert
+  - generic:
+    - complementary:
+      - generic:
+        - generic: ح
+        - generic:
+          - generic: حسابلي لوحة الويب
+          - generic: مؤسسة النور للتجارة
+      - navigation:
+        - generic: القائمة الرئيسية
+        - link:
+          - /url: /
+          - generic: نظرة عامة
+        - link:
+          - /url: /transactions
+          - generic: المعاملات
+        - link:
+          - /url: /reports
+          - generic: التقارير والإحصائيات
+        - link:
+          - /url: /categories
+          - generic: التصنيفات
+        - link:
+          - /url: /settings
+          - generic: الإعدادات
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: مؤسسة النور للتجارة
+              - generic: demo@hesably.com
+          - button:
+            - generic: تسجيل الخروج
+    - generic:
+      - banner:
+        - generic:
+          - generic:
+            - heading [level=1]: سجل المعاملات والفواتير
+        - generic:
+          - generic:
+            - generic: مؤسسة النور للتجارة
+            - generic: (تجارة تجزئة)
+      - main:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=2]: سجل المعاملات
+              - paragraph: عرض، تصفية، تعديل، وحذف المعاملات المسجلة
+            - button:
+              - generic: إضافة معاملة يدوياً
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - textbox:
+                    - /placeholder: ابحث بالاسم أو التصنيف...
+                - combobox:
+                  - generic: كل الأنواع
+                - combobox:
+                  - generic: كل التصنيفات
+                - combobox:
+                  - generic: كل الأوقات
+          - generic:
+            - generic:
+              - generic:
+                - paragraph: لم يتم العثور على أي معاملات
+                - paragraph: جرب تغيير خيارات التصفية أو أضف معاملة جديدة.
+  - dialog:
+    - generic:
+      - heading [level=2]: إضافة معاملة جديدة
+      - paragraph: تسجيل حركة مالية جديدة يدوياً في السجل
+    - generic:
+      - generic:
+        - generic: المبلغ (EGP)
+        - spinbutton: "1500"
+      - generic:
+        - generic:
+          - text: النوع
+          - combobox:
+            - generic: مصروف
+          - combobox
+        - generic:
+          - text: التاريخ
+          - textbox: 2026-08-30
+      - generic:
+        - text: التصنيف
+        - combobox [expanded]:
+          - generic: اختر التصنيف
+        - combobox
+      - generic:
+        - text: اسم التاجر / العميل
+        - textbox:
+          - /placeholder: "مثال: سوبرماركت الأمل أو توريد بضاعة"
+          - text: مكتبة الأهرام للأدوات المكتبية
+      - generic:
+        - button: إلغاء
+        - button: حفظ المعاملة
+    - button:
+      - generic: Close
+  - listbox [active] [ref=f67e237]

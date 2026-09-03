@@ -1,0 +1,19 @@
+- generic [ref=f2e3]:
+  - generic [ref=f2e4]:
+    - generic [ref=f2e5]: ح
+    - heading "حسابلي" [level=1] [ref=f2e6]
+    - paragraph [ref=f2e7]: لوحة التحكم المالية عبر الويب
+  - generic [ref=f2e8]:
+    - generic [ref=f2e9]:
+      - generic [ref=f2e10]: تسجيل الدخول
+      - generic [ref=f2e11]: أدخل البريد الإلكتروني المرتبط بحسابك لتلقي رابط الدخول السحري
+    - generic [ref=f2e12]:
+      - generic [ref=f2e13]:
+        - generic [ref=f2e14]:
+          - text: البريد الإلكتروني
+          - textbox "البريد الإلكتروني" [ref=f2e16]:
+            - /placeholder: name@example.com
+        - button "إرسال رابط الدخول السحري" [ref=f2e17] [cursor=pointer]
+      - generic [ref=f2e19]:
+        - generic [ref=f2e20]: ملاحظة هامة
+        - paragraph [ref=f2e24]: إنشاء الحسابات متاح عبر تطبيق الهاتف فقط. إذا لم تقم بربط بريدك الإلكتروني بعد، افتح التطبيق ➔ الإعدادات ➔ تفعيل الدخول عبر الويب.

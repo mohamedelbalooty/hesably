@@ -1,0 +1,64 @@
+- generic [ref=f58e1]:
+  - 'heading "Application error: a client-side exception has occurred while loading localhost (see the browser console for more information)." [level=2] [ref=f58e4]'
+  - generic:
+    - generic [ref=f58e9] [cursor=pointer]:
+      - button "Open Next.js Dev Tools" [ref=f58e10]
+      - generic [ref=f58e14]:
+        - button "Open issues overlay" [ref=f58e15]:
+          - generic [ref=f58e16]:
+            - generic [ref=f58e17]: "0"
+            - generic [ref=f58e18]: "1"
+          - generic [ref=f58e19]: Issue
+        - button "Collapse issues badge" [ref=f58e20]
+    - generic [ref=f58e25]:
+      - dialog "Unhandled Runtime Error" [ref=f58e26]:
+        - generic [ref=f58e28]:
+          - generic [ref=f58e29]:
+            - generic [ref=f58e30]:
+              - generic [ref=f58e31]:
+                - generic [ref=f58e32]: Unhandled Runtime Error
+                - generic [ref=f58e34]:
+                  - button "Copy Stack Trace" [ref=f58e35] [cursor=pointer]
+                  - button "No related documentation found" [disabled] [ref=f58e38]
+                  - link "Learn more about enabling Node.js inspector for server code with Chrome DevTools" [ref=f58e41] [cursor=pointer]:
+                    - /url: https://nextjs.org/docs/app/building-your-application/configuring/debugging#server-side-code
+              - paragraph [ref=f58e51]: "Error: supabase is not defined"
+            - generic [ref=f58e52]:
+              - generic [ref=f58e53]:
+                - paragraph [ref=f58e55]:
+                  - generic [ref=f58e60]: src\app\page.tsx (160:21) @ OverviewPage
+                  - button "Open in editor" [ref=f58e61] [cursor=pointer]
+                - generic [ref=f58e65]: "158 | 159 | loadOverviewData() > 160 | }, [business?.id, supabase]) | ^ 161 | 162 | // Calculate percentage changes 163 | const calcChange = (current: number, previous: number) => {"
+              - generic [ref=f58e66]:
+                - generic [ref=f58e67]:
+                  - paragraph [ref=f58e68]:
+                    - text: Call Stack
+                    - generic [ref=f58e69]: "2"
+                  - button "Show 1 ignore-listed frames" [ref=f58e70] [cursor=pointer]
+                - generic [ref=f58e73]:
+                  - generic [ref=f58e74]:
+                    - text: OverviewPage
+                    - button [ref=f58e75] [cursor=pointer]
+                  - text: src\app\page.tsx (160:21)
+          - contentinfo [ref=f58e79]:
+            - region "Error feedback" [ref=f58e80]:
+              - paragraph [ref=f58e81]:
+                - link "Was this helpful?" [ref=f58e82] [cursor=pointer]:
+                  - /url: https://nextjs.org/telemetry#error-feedback
+              - button "Mark as helpful" [ref=f58e83] [cursor=pointer]
+              - button "Mark as not helpful" [ref=f58e87] [cursor=pointer]
+          - generic [ref=f58e90]:
+            - generic [ref=f58e91]: "1"
+            - generic [ref=f58e92]: "2"
+      - generic [ref=f58e93]:
+        - navigation [ref=f58e95]:
+          - button [disabled] [ref=f58e96]:
+            - img "previous" [ref=f58e97]
+          - generic [ref=f58e99]:
+            - generic [ref=f58e100]: 1/
+            - text: "1"
+          - button [disabled] [ref=f58e101]:
+            - img "next" [ref=f58e102]
+        - link "Next.js 15.2.1 (outdated)" [ref=f58e105] [cursor=pointer]:
+          - /url: https://nextjs.org/docs/messages/version-staleness
+          - generic "An outdated version detected (latest is 16.3.3), upgrade is highly recommended!" [ref=f58e108]: Next.js 15.2.1 (outdated)

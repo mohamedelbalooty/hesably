@@ -1,0 +1,9 @@
+[     714ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:24907
+[    1208ms] [LOG] DEBUG TRANSACTIONS catData: 10 catErr: null @ webpack-internal:///(app-pages-browser)/./src/app/transactions/page.tsx:81
+[    1210ms] [LOG] DEBUG TRANSACTIONS catData: 10 catErr: null @ webpack-internal:///(app-pages-browser)/./src/app/transactions/page.tsx:81
+[    1295ms] [LOG] DEBUG TRANSACTIONS txData: 4 error: null @ webpack-internal:///(app-pages-browser)/./src/app/transactions/page.tsx:89
+[    1296ms] [LOG] DEBUG TRANSACTIONS txData: 4 error: null @ webpack-internal:///(app-pages-browser)/./src/app/transactions/page.tsx:89
+[  201421ms] [LOG] DEBUG TRANSACTIONS catData: 10 catErr: null @ webpack-internal:///(app-pages-browser)/./src/app/transactions/page.tsx:81
+[  201479ms] [LOG] DEBUG TRANSACTIONS txData: 4 error: null @ webpack-internal:///(app-pages-browser)/./src/app/transactions/page.tsx:89
+[  326091ms] [LOG] DEBUG TRANSACTIONS catData: 10 catErr: null @ webpack-internal:///(app-pages-browser)/./src/app/transactions/page.tsx:81
+[  326133ms] [LOG] DEBUG TRANSACTIONS txData: 3 error: null @ webpack-internal:///(app-pages-browser)/./src/app/transactions/page.tsx:89

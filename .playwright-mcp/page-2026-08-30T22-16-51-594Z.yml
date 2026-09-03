@@ -1,0 +1,22 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e3]:
+    - generic [ref=f3e4]:
+      - generic [ref=f3e5]: ح
+      - heading "حسابلي" [level=1] [ref=f3e6]
+      - paragraph [ref=f3e7]: لوحة التحكم المالية عبر الويب
+    - generic [ref=f3e8]:
+      - generic [ref=f3e9]:
+        - generic [ref=f3e10]: تسجيل الدخول
+        - generic [ref=f3e11]: أدخل البريد الإلكتروني المرتبط بحسابك لتلقي رابط الدخول السحري
+      - generic [ref=f3e12]:
+        - generic [ref=f3e13]:
+          - generic [ref=f3e14]:
+            - text: البريد الإلكتروني
+            - textbox "البريد الإلكتروني" [ref=f3e16]:
+              - /placeholder: name@example.com
+          - button "إرسال رابط الدخول السحري" [ref=f3e17] [cursor=pointer]
+        - generic [ref=f3e19]:
+          - generic [ref=f3e20]: ملاحظة هامة
+          - paragraph [ref=f3e24]: إنشاء الحسابات متاح عبر تطبيق الهاتف فقط. إذا لم تقم بربط بريدك الإلكتروني بعد، افتح التطبيق ➔ الإعدادات ➔ تفعيل الدخول عبر الويب.
+  - button "Open Next.js Dev Tools" [ref=f3e30] [cursor=pointer]
+  - alert [ref=f3e34]

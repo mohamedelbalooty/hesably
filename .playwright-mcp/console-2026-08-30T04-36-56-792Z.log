@@ -1,0 +1,31 @@
+[     766ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:24907
+[  169566ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:241
+[  172184ms] Error: usePathname is not defined
+    at BusinessProvider (webpack-internal:///(app-pages-browser)/./src/components/providers/business-provider.tsx:125:22)
+    at DashboardLayout (webpack-internal:///(app-pages-browser)/./src/components/layout/dashboard-layout.tsx:18:87)
+    at TransactionsPage (webpack-internal:///(app-pages-browser)/./src/app/transactions/page.tsx:305:87)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[  172212ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[  172936ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3000/transactions:0
+[  173531ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:24907
+[  173835ms] Error: usePathname is not defined
+    at BusinessProvider (webpack-internal:///(app-pages-browser)/./src/components/providers/business-provider.tsx:125:22)
+    at DashboardLayout (webpack-internal:///(app-pages-browser)/./src/components/layout/dashboard-layout.tsx:18:87)
+    at TransactionsPage (webpack-internal:///(app-pages-browser)/./src/app/transactions/page.tsx:305:87)
+    at ClientPageRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/client-page.js:20:50)
+[  178382ms] [WARNING] The resource http://127.0.0.1:3000/_next/static/css/app/layout.css?v=1788064789355 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:3000/transactions:0
+[  190607ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:241
+[  192793ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3000/transactions:0
+[  193356ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:24907
+[  193663ms] Error: usePathname is not defined
+    at BusinessProvider (webpack-internal:///(app-pages-browser)/./src/components/providers/business-provider.tsx:125:22)
+    at RootLayout (rsc://React/Server/webpack-internal:///(rsc)/./src/app/layout.tsx?0:27:102)
+[  197237ms] [WARNING] The resource http://127.0.0.1:3000/_next/static/css/app/layout.css?v=1788064809263 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:3000/transactions:0
+[  230733ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:241
+[  232764ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:146
+[  233339ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3000/transactions:0
+[  233586ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:24907
+[  233953ms] Error: usePathname is not defined
+    at BusinessProvider (webpack-internal:///(app-pages-browser)/./src/components/providers/business-provider.tsx:125:22)
+    at RootLayout (rsc://React/Server/webpack-internal:///(rsc)/./src/app/layout.tsx?0:27:102)
+[  237615ms] [WARNING] The resource http://127.0.0.1:3000/_next/static/css/app/layout.css?v=1788064850000 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:3000/transactions:0

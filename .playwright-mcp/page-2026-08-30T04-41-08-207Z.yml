@@ -1,0 +1,67 @@
+- generic [ref=f91e1]:
+  - 'heading "Application error: a client-side exception has occurred while loading 127.0.0.1 (see the browser console for more information)." [level=2] [ref=f91e4]'
+  - generic:
+    - generic [ref=f91e9] [cursor=pointer]:
+      - button "Open Next.js Dev Tools" [ref=f91e10]
+      - generic [ref=f91e14]:
+        - button "Open issues overlay" [ref=f91e15]:
+          - generic [ref=f91e16]:
+            - generic [ref=f91e17]: "0"
+            - generic [ref=f91e18]: "1"
+          - generic [ref=f91e19]: Issue
+        - button "Collapse issues badge" [ref=f91e20]
+    - generic [ref=f91e25]:
+      - dialog "Unhandled Runtime Error" [ref=f91e26]:
+        - generic [ref=f91e28]:
+          - generic [ref=f91e29]:
+            - generic [ref=f91e30]:
+              - generic [ref=f91e31]:
+                - generic [ref=f91e32]: Unhandled Runtime Error
+                - generic [ref=f91e34]:
+                  - button "Copy Stack Trace" [ref=f91e35] [cursor=pointer]
+                  - button "No related documentation found" [disabled] [ref=f91e38]
+                  - link "Learn more about enabling Node.js inspector for server code with Chrome DevTools" [ref=f91e41] [cursor=pointer]:
+                    - /url: https://nextjs.org/docs/app/building-your-application/configuring/debugging#server-side-code
+              - paragraph [ref=f91e51]: "Error: usePathname is not defined"
+            - generic [ref=f91e52]:
+              - generic [ref=f91e53]:
+                - paragraph [ref=f91e55]:
+                  - generic [ref=f91e60]: src\components\providers\business-provider.tsx (129:20) @ BusinessProvider
+                  - button "Open in editor" [ref=f91e61] [cursor=pointer]
+                - generic [ref=f91e65]: "127 | } 128 | > 129 | const pathname = usePathname() | ^ 130 | const isAuthPage = pathname?.startsWith(\"/login\") || pathname?.startsWith(\"/auth\") 131 | 132 | if (isAuthPage) {"
+              - generic [ref=f91e66]:
+                - paragraph [ref=f91e68]:
+                  - text: Call Stack
+                  - generic [ref=f91e69]: "2"
+                - generic [ref=f91e70]:
+                  - generic [ref=f91e71]:
+                    - text: BusinessProvider
+                    - button [ref=f91e72] [cursor=pointer]
+                  - text: src\components\providers\business-provider.tsx (129:20)
+                - generic [ref=f91e75]:
+                  - generic [ref=f91e76]:
+                    - text: RootLayout
+                    - button [ref=f91e77] [cursor=pointer]
+                  - text: src\app\layout.tsx (20:11)
+          - contentinfo [ref=f91e81]:
+            - region "Error feedback" [ref=f91e82]:
+              - paragraph [ref=f91e83]:
+                - link "Was this helpful?" [ref=f91e84] [cursor=pointer]:
+                  - /url: https://nextjs.org/telemetry#error-feedback
+              - button "Mark as helpful" [ref=f91e85] [cursor=pointer]
+              - button "Mark as not helpful" [ref=f91e89] [cursor=pointer]
+          - generic [ref=f91e92]:
+            - generic [ref=f91e93]: "1"
+            - generic [ref=f91e94]: "2"
+      - generic [ref=f91e95]:
+        - navigation [ref=f91e97]:
+          - button [disabled] [ref=f91e98]:
+            - img "previous" [ref=f91e99]
+          - generic [ref=f91e101]:
+            - generic [ref=f91e102]: 1/
+            - text: "1"
+          - button [disabled] [ref=f91e103]:
+            - img "next" [ref=f91e104]
+        - link "Next.js 15.2.1 (outdated)" [ref=f91e107] [cursor=pointer]:
+          - /url: https://nextjs.org/docs/messages/version-staleness
+          - generic "An outdated version detected (latest is 16.3.3), upgrade is highly recommended!" [ref=f91e110]: Next.js 15.2.1 (outdated)
