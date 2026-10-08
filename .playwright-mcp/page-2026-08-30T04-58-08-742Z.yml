@@ -1,0 +1,75 @@
+- generic [ref=f99e1]:
+  - button "Open Next.js Dev Tools" [ref=f99e12] [cursor=pointer]
+  - alert [ref=f99e6]
+  - generic [ref=f99e16]:
+    - complementary [ref=f99e17]:
+      - generic [ref=f99e18]:
+        - generic [ref=f99e19]: ح
+        - generic [ref=f99e20]:
+          - generic [ref=f99e21]: حسابلي لوحة الويب
+          - generic "مؤسسة النور للتجارة" [ref=f99e22]
+      - navigation [ref=f99e23]:
+        - generic [ref=f99e24]: القائمة الرئيسية
+        - link "نظرة عامة" [ref=f99e25] [cursor=pointer]:
+          - /url: /
+        - link "المعاملات" [ref=f99e32] [cursor=pointer]:
+          - /url: /transactions
+        - link "التقارير والإحصائيات" [ref=f99e36] [cursor=pointer]:
+          - /url: /reports
+        - link "التصنيفات" [ref=f99e41] [cursor=pointer]:
+          - /url: /categories
+        - link "الإعدادات" [ref=f99e47] [cursor=pointer]:
+          - /url: /settings
+      - generic [ref=f99e53]:
+        - generic [ref=f99e60]:
+          - generic [ref=f99e61]: مؤسسة النور للتجارة
+          - generic [ref=f99e62]: demo@hesably.com
+        - button "تسجيل الخروج" [ref=f99e63] [cursor=pointer]
+    - generic [ref=f99e68]:
+      - banner [ref=f99e69]:
+        - heading "التقارير المالية والتحليلات" [level=1] [ref=f99e72]
+        - generic [ref=f99e74]:
+          - generic [ref=f99e79]: مؤسسة النور للتجارة
+          - generic [ref=f99e80]: (تجارة تجزئة)
+      - main [ref=f99e81]:
+        - generic [ref=f99e82]:
+          - generic [ref=f99e83]:
+            - generic [ref=f99e84]:
+              - heading "التقارير المالية" [level=2] [ref=f99e85]
+              - paragraph [ref=f99e86]: تحليل شامل للأداء المالي وتصدير البيانات بصيغ PDF و Excel
+            - generic [ref=f99e87]:
+              - button "تصدير Excel" [active] [ref=f99e88] [cursor=pointer]
+              - button "تصدير PDF" [ref=f99e90] [cursor=pointer]
+          - generic [ref=f99e95]:
+            - generic [ref=f99e98]: "اختر الفترة الزمنية:"
+            - combobox [ref=f99e99]:
+              - generic: الشهر الحالي
+          - generic [ref=f99e102]:
+            - generic [ref=f99e103]:
+              - generic [ref=f99e104]: إجمالي الإيرادات للفترة
+              - generic [ref=f99e109]: ‏٨٬٥٠٠٫٠٠ ج.م.‏
+            - generic [ref=f99e111]:
+              - generic [ref=f99e112]: إجمالي المصروفات للفترة
+              - generic [ref=f99e117]: ‏٥٬٠٠٠٫٠٠ ج.م.‏
+            - generic [ref=f99e119]:
+              - generic [ref=f99e120]: صافي الفترة
+              - generic [ref=f99e125]: ‏٣٬٥٠٠٫٠٠ ج.م.‏
+          - generic [ref=f99e127]:
+            - generic [ref=f99e128]:
+              - generic [ref=f99e129]:
+                - generic [ref=f99e130]: توزيع بنود المصروفات
+                - generic [ref=f99e131]: المبالغ المصروفة مقسمة حسب التصنيف
+              - img [ref=f99e136]:
+                - generic [ref=f99e140]:
+                  - generic [ref=f99e141]: Sales
+                  - generic [ref=f99e143]: Services
+                - generic [ref=f99e146]:
+                  - generic [ref=f99e147]: "0"
+                  - generic [ref=f99e149]: "950"
+                  - generic [ref=f99e151]: "1900"
+                  - generic [ref=f99e153]: "2850"
+                  - generic [ref=f99e155]: "3800"
+            - generic [ref=f99e165]:
+              - generic [ref=f99e166]: توزيع مصادر الإيرادات
+              - generic [ref=f99e167]: الحصة النسبية لكل بند إيراد
+  - generic [ref=f99e176]: "0"

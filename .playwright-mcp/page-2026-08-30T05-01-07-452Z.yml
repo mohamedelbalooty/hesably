@@ -1,0 +1,187 @@
+- generic:
+  - button [ref=f100e251] [cursor=pointer]
+  - alert
+  - generic:
+    - complementary:
+      - generic:
+        - generic: ح
+        - generic:
+          - generic: حسابلي لوحة الويب
+          - generic: مؤسسة النور للتجارة
+      - navigation:
+        - generic: القائمة الرئيسية
+        - link:
+          - /url: /
+          - generic: نظرة عامة
+        - link:
+          - /url: /transactions
+          - generic: المعاملات
+        - link:
+          - /url: /reports
+          - generic: التقارير والإحصائيات
+        - link:
+          - /url: /categories
+          - generic: التصنيفات
+        - link:
+          - /url: /settings
+          - generic: الإعدادات
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: مؤسسة النور للتجارة
+              - generic: demo@hesably.com
+          - button:
+            - generic: تسجيل الخروج
+    - generic:
+      - banner:
+        - generic:
+          - generic:
+            - heading [level=1]: إدارة تصنيفات المصروفات والإيرادات
+        - generic:
+          - generic:
+            - generic: مؤسسة النور للتجارة
+            - generic: (تجارة تجزئة)
+      - main:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=2]: إدارة التصنيفات
+              - paragraph: تنظيم وتصنيف بنود المصروفات والإيرادات للنشاط التجاري
+            - button:
+              - generic: إضافة تصنيف جديد
+          - generic:
+            - generic:
+              - generic:
+                - table:
+                  - rowgroup:
+                    - row:
+                      - columnheader: اسم التصنيف
+                      - columnheader: النوع
+                      - columnheader: عدد المعاملات المرتبطة
+                      - columnheader: الحالة
+                      - columnheader: الإجراءات
+                  - rowgroup:
+                    - row:
+                      - cell: Maintenance
+                      - cell:
+                        - generic: أساسي (نظام)
+                      - cell: 0 معاملة
+                      - cell:
+                        - generic: نشط
+                      - cell:
+                        - generic:
+                          - button:
+                            - generic: إخفاء
+                    - row:
+                      - cell: Marketing
+                      - cell:
+                        - generic: أساسي (نظام)
+                      - cell: 0 معاملة
+                      - cell:
+                        - generic: نشط
+                      - cell:
+                        - generic:
+                          - button:
+                            - generic: إخفاء
+                    - row:
+                      - cell: Other Expense
+                      - cell:
+                        - generic: أساسي (نظام)
+                      - cell: 0 معاملة
+                      - cell:
+                        - generic: نشط
+                      - cell:
+                        - generic:
+                          - button:
+                            - generic: إخفاء
+                    - row:
+                      - cell: Other Income
+                      - cell:
+                        - generic: أساسي (نظام)
+                      - cell: 0 معاملة
+                      - cell:
+                        - generic: نشط
+                      - cell:
+                        - generic:
+                          - button:
+                            - generic: إخفاء
+                    - row:
+                      - cell: Rent
+                      - cell:
+                        - generic: أساسي (نظام)
+                      - cell: 0 معاملة
+                      - cell:
+                        - generic: نشط
+                      - cell:
+                        - generic:
+                          - button:
+                            - generic: إخفاء
+                    - row:
+                      - cell: Sales
+                      - cell:
+                        - generic: أساسي (نظام)
+                      - cell: 1 معاملة
+                      - cell:
+                        - generic: نشط
+                      - cell:
+                        - generic:
+                          - button:
+                            - generic: إخفاء
+                    - row:
+                      - cell: Services
+                      - cell:
+                        - generic: أساسي (نظام)
+                      - cell: 1 معاملة
+                      - cell:
+                        - generic: نشط
+                      - cell:
+                        - generic:
+                          - button:
+                            - generic: إخفاء
+                    - row:
+                      - cell: Supplies
+                      - cell:
+                        - generic: أساسي (نظام)
+                      - cell: 1 معاملة
+                      - cell:
+                        - generic: نشط
+                      - cell:
+                        - generic:
+                          - button:
+                            - generic: إخفاء
+                    - row:
+                      - cell: Transportation
+                      - cell:
+                        - generic: أساسي (نظام)
+                      - cell: 0 معاملة
+                      - cell:
+                        - generic: نشط
+                      - cell:
+                        - generic:
+                          - button:
+                            - generic: إخفاء
+                    - row:
+                      - cell: Utilities
+                      - cell:
+                        - generic: أساسي (نظام)
+                      - cell: 0 معاملة
+                      - cell:
+                        - generic: نشط
+                      - cell:
+                        - generic:
+                          - button:
+                            - generic: إخفاء
+  - dialog [ref=f100e253]:
+    - generic [ref=f100e254]:
+      - heading "إضافة تصنيف مخصص جديد" [level=2] [ref=f100e255]
+      - paragraph [ref=f100e256]: أدخل اسم التصنيف الجديد لتسهيل تتبع نفقاتك
+    - generic [ref=f100e257]:
+      - generic [ref=f100e258]:
+        - text: اسم التصنيف
+        - textbox "اسم التصنيف" [active] [ref=f100e259]:
+          - /placeholder: "مثال: شحن وبضائع، صيانة أجهزة"
+      - generic [ref=f100e260]:
+        - button "إلغاء" [ref=f100e261] [cursor=pointer]
+        - button "حفظ التصنيف" [ref=f100e262] [cursor=pointer]
+    - button "Close" [ref=f100e263]

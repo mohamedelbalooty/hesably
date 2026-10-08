@@ -1,0 +1,77 @@
+- generic [active] [ref=f1e1]:
+  - button "Open Next.js Dev Tools" [ref=f1e197] [cursor=pointer]
+  - alert [ref=f1e15]
+  - generic [ref=f1e16]:
+    - complementary [ref=f1e17]:
+      - generic [ref=f1e18]:
+        - generic [ref=f1e19]: ح
+        - generic [ref=f1e20]:
+          - generic [ref=f1e21]: حسابلي لوحة الويب
+          - generic "سوبرماركت الأمل" [ref=f1e22]
+      - navigation [ref=f1e23]:
+        - generic [ref=f1e24]: القائمة الرئيسية
+        - link "نظرة عامة" [ref=f1e25] [cursor=pointer]:
+          - /url: /
+        - link "المعاملات" [ref=f1e32] [cursor=pointer]:
+          - /url: /transactions
+        - link "التقارير والإحصائيات" [ref=f1e36] [cursor=pointer]:
+          - /url: /reports
+        - link "التصنيفات" [ref=f1e41] [cursor=pointer]:
+          - /url: /categories
+        - link "الإعدادات" [ref=f1e47] [cursor=pointer]:
+          - /url: /settings
+      - generic [ref=f1e53]:
+        - generic [ref=f1e60]:
+          - generic [ref=f1e61]: سوبرماركت الأمل
+          - generic [ref=f1e62]: elamal.owner@hesably.com
+        - button "تسجيل الخروج" [ref=f1e63] [cursor=pointer]
+    - generic [ref=f1e68]:
+      - banner [ref=f1e69]:
+        - heading "سجل المعاملات والفواتير" [level=1] [ref=f1e72]
+        - generic [ref=f1e74]:
+          - generic [ref=f1e79]: سوبرماركت الأمل
+          - generic [ref=f1e80]: (retail)
+      - main [ref=f1e81]:
+        - generic [ref=f1e82]:
+          - generic [ref=f1e83]:
+            - generic [ref=f1e84]:
+              - heading "سجل المعاملات" [level=2] [ref=f1e85]
+              - paragraph [ref=f1e86]: عرض، تصفية، تعديل، وحذف المعاملات المسجلة
+            - button "إضافة معاملة يدوياً" [ref=f1e87] [cursor=pointer]
+          - generic [ref=f1e91]:
+            - textbox "ابحث بالاسم أو التصنيف..." [ref=f1e93]
+            - combobox [ref=f1e94]:
+              - generic: كل الأنواع
+            - combobox [ref=f1e97]:
+              - generic: كل التصنيفات
+            - combobox [ref=f1e100]:
+              - generic: كل الأوقات
+          - table [ref=f1e199]:
+            - rowgroup [ref=f1e200]:
+              - row [ref=f1e201]:
+                - columnheader "التاريخ" [ref=f1e202]
+                - columnheader "النوع" [ref=f1e203]
+                - columnheader "البيان / الطرف" [ref=f1e204]
+                - columnheader "التصنيف" [ref=f1e205]
+                - columnheader "المبلغ" [ref=f1e206]
+                - columnheader "الفاتورة" [ref=f1e207]
+                - columnheader "الإجراءات" [ref=f1e208]
+            - rowgroup [ref=f1e209]:
+              - row [ref=f1e210] [cursor=pointer]:
+                - cell "٣٠ أغسطس ٢٠٢٦" [ref=f1e211]
+                - cell "إيراد" [ref=f1e212]
+                - cell "مبيعات اليوم - كاش" [ref=f1e214]
+                - cell "Sales" [ref=f1e215]
+                - cell "+‏٥٬٢٥٠٫٠٠ ج.م.‏" [ref=f1e216]
+                - cell "—" [ref=f1e217]
+                - cell [ref=f1e218]:
+                  - button "عرض" [ref=f1e219]
+              - row [ref=f1e221] [cursor=pointer]:
+                - cell "٣٠ أغسطس ٢٠٢٦" [ref=f1e222]
+                - cell "مصروف" [ref=f1e223]
+                - cell "مكتبة ومستلزمات القاهرة - فرع وسط البلد" [ref=f1e225]
+                - cell "Supplies" [ref=f1e226]
+                - cell "-‏١٬٧٥٠٫٠٠ ج.م.‏" [ref=f1e227]
+                - cell "مرفقة" [ref=f1e228]
+                - cell [ref=f1e236]:
+                  - button "عرض" [ref=f1e237]

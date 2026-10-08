@@ -1,0 +1,22 @@
+[     214ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3000/:0
+[     481ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:24907
+[     630ms] Error: usePathname is not defined
+    at BusinessProvider (webpack-internal:///(app-pages-browser)/./src/components/providers/business-provider.tsx:125:22)
+    at RootLayout (rsc://React/Server/webpack-internal:///(rsc)/./src/app/layout.tsx?0:27:102)
+[    3943ms] [WARNING] The resource http://127.0.0.1:3000/_next/static/css/app/layout.css?v=1788064867305 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://127.0.0.1:3000/:0
+[   97254ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:241
+[   99079ms] [WARNING] [Fast Refresh] performing full reload
+
+Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.
+You might have a file which exports a React component but also exports a value that is imported by a non-React component file.
+Consider migrating the non-React component export to a separate file and importing it into both files.
+
+It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.
+Fast Refresh requires at least one parent function component in your React tree. @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/components/react-dev-overlay/app/hot-reloader-client.js:144
+[  100378ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:24907
+[  100898ms] [LOG] DEBUG summaryData: [Object] sumErr: null @ webpack-internal:///(app-pages-browser)/./src/app/page.tsx:81
+[  100932ms] [LOG] DEBUG summaryData: [Object] sumErr: null @ webpack-internal:///(app-pages-browser)/./src/app/page.tsx:81
+[  100966ms] [LOG] DEBUG expenseCats: [Object, Object] expErr: null @ webpack-internal:///(app-pages-browser)/./src/app/page.tsx:109
+[  101164ms] [LOG] DEBUG expenseCats: [Object, Object] expErr: null @ webpack-internal:///(app-pages-browser)/./src/app/page.tsx:109
+[  101218ms] [LOG] DEBUG txData: [Object, Object, Object, Object] txErr: null @ webpack-internal:///(app-pages-browser)/./src/app/page.tsx:139
+[  101309ms] [LOG] DEBUG txData: [Object, Object, Object, Object] txErr: null @ webpack-internal:///(app-pages-browser)/./src/app/page.tsx:139

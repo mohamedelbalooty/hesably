@@ -1,0 +1,132 @@
+- generic:
+  - button [ref=f1e146] [cursor=pointer]
+  - alert
+  - generic:
+    - complementary:
+      - generic:
+        - generic: ح
+        - generic:
+          - generic: حسابلي لوحة الويب
+          - generic: سوبرماركت الأمل
+      - navigation:
+        - generic: القائمة الرئيسية
+        - link:
+          - /url: /
+          - generic: نظرة عامة
+        - link:
+          - /url: /transactions
+          - generic: المعاملات
+        - link:
+          - /url: /reports
+          - generic: التقارير والإحصائيات
+        - link:
+          - /url: /categories
+          - generic: التصنيفات
+        - link:
+          - /url: /settings
+          - generic: الإعدادات
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: سوبرماركت الأمل
+              - generic: elamal.owner@hesably.com
+          - button:
+            - generic: تسجيل الخروج
+    - generic:
+      - banner:
+        - generic:
+          - generic:
+            - heading [level=1]: سجل المعاملات والفواتير
+        - generic:
+          - generic:
+            - generic: سوبرماركت الأمل
+            - generic: (retail)
+      - main:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=2]: سجل المعاملات
+              - paragraph: عرض، تصفية، تعديل، وحذف المعاملات المسجلة
+            - button:
+              - generic: إضافة معاملة يدوياً
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - textbox:
+                    - /placeholder: ابحث بالاسم أو التصنيف...
+                - combobox:
+                  - generic: كل الأنواع
+                - combobox:
+                  - generic: كل التصنيفات
+                - combobox:
+                  - generic: كل الأوقات
+          - generic:
+            - generic:
+              - generic:
+                - table:
+                  - rowgroup:
+                    - row:
+                      - columnheader: التاريخ
+                      - columnheader: النوع
+                      - columnheader: البيان / الطرف
+                      - columnheader: التصنيف
+                      - columnheader: المبلغ
+                      - columnheader: الفاتورة
+                      - columnheader: الإجراءات
+                  - rowgroup:
+                    - row:
+                      - cell: ٣٠ أغسطس ٢٠٢٦
+                      - cell:
+                        - generic: إيراد
+                      - cell: مبيعات اليوم - كاش
+                      - cell: Sales
+                      - cell: +‏٥٬٢٥٠٫٠٠ ج.م.‏
+                      - cell: —
+                      - cell:
+                        - button:
+                          - generic: عرض
+                    - row:
+                      - cell: ٣٠ أغسطس ٢٠٢٦
+                      - cell:
+                        - generic: مصروف
+                      - cell: مكتبة ومستلزمات القاهرة
+                      - cell: Supplies
+                      - cell: "-‏١٬٧٥٠٫٠٠ ج.م.‏"
+                      - cell:
+                        - generic: مرفقة
+                      - cell:
+                        - button:
+                          - generic: عرض
+  - dialog [active] [ref=f1e173]:
+    - generic [ref=f1e149]:
+      - heading "تعديل المعاملة" [level=2] [ref=f1e174]
+      - paragraph [ref=f1e151]: قم بتعديل البيانات وحفظ التغييرات
+    - generic [ref=f1e175]:
+      - generic [ref=f1e176]:
+        - generic [ref=f1e177]: المبلغ (EGP)
+        - spinbutton "المبلغ (EGP)" [ref=f1e178]: "1750"
+      - generic [ref=f1e179]:
+        - generic [ref=f1e180]:
+          - text: النوع
+          - combobox "النوع" [ref=f1e181]:
+            - generic: مصروف
+          - combobox [ref=f1e184]
+        - generic [ref=f1e185]:
+          - text: التاريخ
+          - textbox "التاريخ" [ref=f1e186]: 2026-08-30
+      - generic [ref=f1e187]:
+        - text: التصنيف
+        - combobox "التصنيف" [ref=f1e188]:
+          - generic: Supplies
+        - combobox [ref=f1e191]
+      - generic [ref=f1e192]:
+        - text: اسم التاجر / العميل
+        - textbox "اسم التاجر / العميل" [ref=f1e193]:
+          - /placeholder: "مثال: شركة النور أو عميل نقدي"
+          - text: مكتبة ومستلزمات القاهرة
+      - generic [ref=f1e194]:
+        - button "إلغاء التعديل" [ref=f1e195] [cursor=pointer]
+        - button "حفظ التغييرات" [ref=f1e196] [cursor=pointer]
+    - button "Close" [ref=f1e168]

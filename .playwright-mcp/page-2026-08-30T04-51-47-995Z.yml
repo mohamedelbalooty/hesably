@@ -1,0 +1,95 @@
+- generic [active] [ref=f98e1]:
+  - button "Open Next.js Dev Tools" [ref=f98e212] [cursor=pointer]
+  - alert [ref=f98e15]
+  - generic [ref=f98e16]:
+    - complementary [ref=f98e17]:
+      - generic [ref=f98e18]:
+        - generic [ref=f98e19]: ح
+        - generic [ref=f98e20]:
+          - generic [ref=f98e21]: حسابلي لوحة الويب
+          - generic "مؤسسة النور للتجارة" [ref=f98e22]
+      - navigation [ref=f98e23]:
+        - generic [ref=f98e24]: القائمة الرئيسية
+        - link "نظرة عامة" [ref=f98e25] [cursor=pointer]:
+          - /url: /
+        - link "المعاملات" [ref=f98e32] [cursor=pointer]:
+          - /url: /transactions
+        - link "التقارير والإحصائيات" [ref=f98e36] [cursor=pointer]:
+          - /url: /reports
+        - link "التصنيفات" [ref=f98e41] [cursor=pointer]:
+          - /url: /categories
+        - link "الإعدادات" [ref=f98e47] [cursor=pointer]:
+          - /url: /settings
+      - generic [ref=f98e53]:
+        - generic [ref=f98e60]:
+          - generic [ref=f98e61]: مؤسسة النور للتجارة
+          - generic [ref=f98e62]: demo@hesably.com
+        - button "تسجيل الخروج" [ref=f98e63] [cursor=pointer]
+    - generic [ref=f98e68]:
+      - banner [ref=f98e69]:
+        - heading "سجل المعاملات والفواتير" [level=1] [ref=f98e72]
+        - generic [ref=f98e74]:
+          - generic [ref=f98e79]: مؤسسة النور للتجارة
+          - generic [ref=f98e80]: (تجارة تجزئة)
+      - main [ref=f98e81]:
+        - generic [ref=f98e82]:
+          - generic [ref=f98e83]:
+            - generic [ref=f98e84]:
+              - heading "سجل المعاملات" [level=2] [ref=f98e85]
+              - paragraph [ref=f98e86]: عرض، تصفية، تعديل، وحذف المعاملات المسجلة
+            - button "إضافة معاملة يدوياً" [ref=f98e87] [cursor=pointer]
+          - generic [ref=f98e91]:
+            - textbox "ابحث بالاسم أو التصنيف..." [ref=f98e93]
+            - combobox [ref=f98e94]:
+              - generic: كل الأنواع
+            - combobox [ref=f98e97]:
+              - generic: كل التصنيفات
+            - combobox [ref=f98e100]:
+              - generic: كل الأوقات
+          - table [ref=f98e214]:
+            - rowgroup [ref=f98e215]:
+              - row [ref=f98e216]:
+                - columnheader "التاريخ" [ref=f98e217]
+                - columnheader "النوع" [ref=f98e218]
+                - columnheader "البيان / الطرف" [ref=f98e219]
+                - columnheader "التصنيف" [ref=f98e220]
+                - columnheader "المبلغ" [ref=f98e221]
+                - columnheader "الفاتورة" [ref=f98e222]
+                - columnheader "الإجراءات" [ref=f98e223]
+            - rowgroup [ref=f98e224]:
+              - row [ref=f98e225] [cursor=pointer]:
+                - cell "٢٩ أغسطس ٢٠٢٦" [ref=f98e226]
+                - cell "مصروف" [ref=f98e227]
+                - cell "شركة الأهرام للتوريدات" [ref=f98e229]
+                - cell "Sales" [ref=f98e230]
+                - cell "-‏٣٬٨٠٠٫٠٠ ج.م.‏" [ref=f98e231]
+                - cell "—" [ref=f98e232]
+                - cell [ref=f98e233]:
+                  - button "عرض" [ref=f98e234]
+              - row [ref=f98e236] [cursor=pointer]:
+                - cell "٢٩ أغسطس ٢٠٢٦" [ref=f98e237]
+                - cell "مصروف" [ref=f98e238]
+                - cell "شركة الكهرباء" [ref=f98e240]
+                - cell "Services" [ref=f98e241]
+                - cell "-‏١٬٢٠٠٫٠٠ ج.م.‏" [ref=f98e242]
+                - cell "—" [ref=f98e243]
+                - cell [ref=f98e244]:
+                  - button "عرض" [ref=f98e245]
+              - row [ref=f98e247] [cursor=pointer]:
+                - cell "٢٩ أغسطس ٢٠٢٦" [ref=f98e248]
+                - cell "إيراد" [ref=f98e249]
+                - cell "مبيعات الفرع الرئيسي" [ref=f98e251]
+                - cell "Supplies" [ref=f98e252]
+                - cell "+‏٨٬٥٠٠٫٠٠ ج.م.‏" [ref=f98e253]
+                - cell "—" [ref=f98e254]
+                - cell [ref=f98e255]:
+                  - button "عرض" [ref=f98e256]
+              - row [ref=f98e258] [cursor=pointer]:
+                - cell "٢٩ أغسطس ٢٠٢٦" [ref=f98e259]
+                - cell "إيراد" [ref=f98e260]
+                - cell "عميل نقدي" [ref=f98e262]
+                - cell "Supplies" [ref=f98e263]
+                - cell "+‏٤٬٢٠٠٫٠٠ ج.م.‏" [ref=f98e264]
+                - cell "—" [ref=f98e265]
+                - cell [ref=f98e266]:
+                  - button "عرض" [ref=f98e267]

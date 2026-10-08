@@ -1,0 +1,128 @@
+- generic [active] [ref=f100e1]:
+  - button "Open Next.js Dev Tools" [ref=f100e268] [cursor=pointer]
+  - alert [ref=f100e15]
+  - generic [ref=f100e16]:
+    - complementary [ref=f100e17]:
+      - generic [ref=f100e18]:
+        - generic [ref=f100e19]: ح
+        - generic [ref=f100e20]:
+          - generic [ref=f100e21]: حسابلي لوحة الويب
+          - generic "مؤسسة النور للتجارة" [ref=f100e22]
+      - navigation [ref=f100e23]:
+        - generic [ref=f100e24]: القائمة الرئيسية
+        - link "نظرة عامة" [ref=f100e25] [cursor=pointer]:
+          - /url: /
+        - link "المعاملات" [ref=f100e32] [cursor=pointer]:
+          - /url: /transactions
+        - link "التقارير والإحصائيات" [ref=f100e36] [cursor=pointer]:
+          - /url: /reports
+        - link "التصنيفات" [ref=f100e41] [cursor=pointer]:
+          - /url: /categories
+        - link "الإعدادات" [ref=f100e47] [cursor=pointer]:
+          - /url: /settings
+      - generic [ref=f100e53]:
+        - generic [ref=f100e60]:
+          - generic [ref=f100e61]: مؤسسة النور للتجارة
+          - generic [ref=f100e62]: demo@hesably.com
+        - button "تسجيل الخروج" [ref=f100e63] [cursor=pointer]
+    - generic [ref=f100e68]:
+      - banner [ref=f100e69]:
+        - heading "إدارة تصنيفات المصروفات والإيرادات" [level=1] [ref=f100e72]
+        - generic [ref=f100e74]:
+          - generic [ref=f100e79]: مؤسسة النور للتجارة
+          - generic [ref=f100e80]: (تجارة تجزئة)
+      - main [ref=f100e81]:
+        - generic [ref=f100e82]:
+          - generic [ref=f100e83]:
+            - generic [ref=f100e84]:
+              - heading "إدارة التصنيفات" [level=2] [ref=f100e85]
+              - paragraph [ref=f100e86]: تنظيم وتصنيف بنود المصروفات والإيرادات للنشاط التجاري
+            - button "إضافة تصنيف جديد" [ref=f100e87] [cursor=pointer]
+          - table [ref=f100e270]:
+            - rowgroup [ref=f100e271]:
+              - row [ref=f100e272]:
+                - columnheader "اسم التصنيف" [ref=f100e273]
+                - columnheader "النوع" [ref=f100e274]
+                - columnheader "عدد المعاملات المرتبطة" [ref=f100e275]
+                - columnheader "الحالة" [ref=f100e276]
+                - columnheader "الإجراءات" [ref=f100e277]
+            - rowgroup [ref=f100e278]:
+              - row [ref=f100e279]:
+                - cell "Maintenance" [ref=f100e280]
+                - cell "أساسي (نظام)" [ref=f100e281]
+                - cell "0 معاملة" [ref=f100e287]
+                - cell "نشط" [ref=f100e288]
+                - cell [ref=f100e290]:
+                  - button "إخفاء" [ref=f100e292] [cursor=pointer]
+              - row [ref=f100e294]:
+                - cell "Marketing" [ref=f100e295]
+                - cell "أساسي (نظام)" [ref=f100e296]
+                - cell "0 معاملة" [ref=f100e302]
+                - cell "نشط" [ref=f100e303]
+                - cell [ref=f100e305]:
+                  - button "إخفاء" [ref=f100e307] [cursor=pointer]
+              - row [ref=f100e309]:
+                - cell "Other Expense" [ref=f100e310]
+                - cell "أساسي (نظام)" [ref=f100e311]
+                - cell "0 معاملة" [ref=f100e317]
+                - cell "نشط" [ref=f100e318]
+                - cell [ref=f100e320]:
+                  - button "إخفاء" [ref=f100e322] [cursor=pointer]
+              - row [ref=f100e324]:
+                - cell "Other Income" [ref=f100e325]
+                - cell "أساسي (نظام)" [ref=f100e326]
+                - cell "0 معاملة" [ref=f100e332]
+                - cell "نشط" [ref=f100e333]
+                - cell [ref=f100e335]:
+                  - button "إخفاء" [ref=f100e337] [cursor=pointer]
+              - row [ref=f100e339]:
+                - cell "Rent" [ref=f100e340]
+                - cell "أساسي (نظام)" [ref=f100e341]
+                - cell "0 معاملة" [ref=f100e347]
+                - cell "نشط" [ref=f100e348]
+                - cell [ref=f100e350]:
+                  - button "إخفاء" [ref=f100e352] [cursor=pointer]
+              - row [ref=f100e354]:
+                - cell "Sales" [ref=f100e355]
+                - cell "أساسي (نظام)" [ref=f100e356]
+                - cell "1 معاملة" [ref=f100e362]
+                - cell "نشط" [ref=f100e363]
+                - cell [ref=f100e365]:
+                  - button "إخفاء" [ref=f100e367] [cursor=pointer]
+              - row [ref=f100e369]:
+                - cell "Services" [ref=f100e370]
+                - cell "أساسي (نظام)" [ref=f100e371]
+                - cell "1 معاملة" [ref=f100e377]
+                - cell "نشط" [ref=f100e378]
+                - cell [ref=f100e380]:
+                  - button "إخفاء" [ref=f100e382] [cursor=pointer]
+              - row [ref=f100e384]:
+                - cell "Supplies" [ref=f100e385]
+                - cell "أساسي (نظام)" [ref=f100e386]
+                - cell "1 معاملة" [ref=f100e392]
+                - cell "نشط" [ref=f100e393]
+                - cell [ref=f100e395]:
+                  - button "إخفاء" [ref=f100e397] [cursor=pointer]
+              - row [ref=f100e399]:
+                - cell "Transportation" [ref=f100e400]
+                - cell "أساسي (نظام)" [ref=f100e401]
+                - cell "0 معاملة" [ref=f100e407]
+                - cell "نشط" [ref=f100e408]
+                - cell [ref=f100e410]:
+                  - button "إخفاء" [ref=f100e412] [cursor=pointer]
+              - row [ref=f100e414]:
+                - cell "Utilities" [ref=f100e415]
+                - cell "أساسي (نظام)" [ref=f100e416]
+                - cell "0 معاملة" [ref=f100e422]
+                - cell "نشط" [ref=f100e423]
+                - cell [ref=f100e425]:
+                  - button "إخفاء" [ref=f100e427] [cursor=pointer]
+              - row [ref=f100e429]:
+                - cell "مصاريف بنكية ورسوم إدارية" [ref=f100e430]
+                - cell "مخصص" [ref=f100e431]
+                - cell "0 معاملة" [ref=f100e438]
+                - cell "نشط" [ref=f100e439]
+                - cell [ref=f100e441]:
+                  - generic [ref=f100e442]:
+                    - button "تعديل" [ref=f100e443] [cursor=pointer]
+                    - button "حذف" [ref=f100e445] [cursor=pointer]

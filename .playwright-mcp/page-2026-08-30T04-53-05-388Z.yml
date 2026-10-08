@@ -1,0 +1,156 @@
+- generic:
+  - button [ref=f98e269] [cursor=pointer]
+  - alert
+  - generic:
+    - complementary:
+      - generic:
+        - generic: ح
+        - generic:
+          - generic: حسابلي لوحة الويب
+          - generic: مؤسسة النور للتجارة
+      - navigation:
+        - generic: القائمة الرئيسية
+        - link:
+          - /url: /
+          - generic: نظرة عامة
+        - link:
+          - /url: /transactions
+          - generic: المعاملات
+        - link:
+          - /url: /reports
+          - generic: التقارير والإحصائيات
+        - link:
+          - /url: /categories
+          - generic: التصنيفات
+        - link:
+          - /url: /settings
+          - generic: الإعدادات
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: مؤسسة النور للتجارة
+              - generic: demo@hesably.com
+          - button:
+            - generic: تسجيل الخروج
+    - generic:
+      - banner:
+        - generic:
+          - generic:
+            - heading [level=1]: سجل المعاملات والفواتير
+        - generic:
+          - generic:
+            - generic: مؤسسة النور للتجارة
+            - generic: (تجارة تجزئة)
+      - main:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=2]: سجل المعاملات
+              - paragraph: عرض، تصفية، تعديل، وحذف المعاملات المسجلة
+            - button:
+              - generic: إضافة معاملة يدوياً
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - textbox:
+                    - /placeholder: ابحث بالاسم أو التصنيف...
+                - combobox:
+                  - generic: كل الأنواع
+                - combobox:
+                  - generic: كل التصنيفات
+                - combobox:
+                  - generic: كل الأوقات
+          - generic:
+            - generic:
+              - generic:
+                - table:
+                  - rowgroup:
+                    - row:
+                      - columnheader: التاريخ
+                      - columnheader: النوع
+                      - columnheader: البيان / الطرف
+                      - columnheader: التصنيف
+                      - columnheader: المبلغ
+                      - columnheader: الفاتورة
+                      - columnheader: الإجراءات
+                  - rowgroup:
+                    - row:
+                      - cell: ٢٩ أغسطس ٢٠٢٦
+                      - cell:
+                        - generic: مصروف
+                      - cell: شركة الأهرام للتوريدات
+                      - cell: Sales
+                      - cell: "-‏٣٬٨٠٠٫٠٠ ج.م.‏"
+                      - cell: —
+                      - cell:
+                        - button:
+                          - generic: عرض
+                    - row:
+                      - cell: ٢٩ أغسطس ٢٠٢٦
+                      - cell:
+                        - generic: مصروف
+                      - cell: شركة الكهرباء
+                      - cell: Services
+                      - cell: "-‏١٬٢٠٠٫٠٠ ج.م.‏"
+                      - cell: —
+                      - cell:
+                        - button:
+                          - generic: عرض
+                    - row:
+                      - cell: ٢٩ أغسطس ٢٠٢٦
+                      - cell:
+                        - generic: إيراد
+                      - cell: مبيعات الفرع الرئيسي
+                      - cell: Supplies
+                      - cell: +‏٨٬٥٠٠٫٠٠ ج.م.‏
+                      - cell: —
+                      - cell:
+                        - button:
+                          - generic: عرض
+                    - row:
+                      - cell: ٢٩ أغسطس ٢٠٢٦
+                      - cell:
+                        - generic: إيراد
+                      - cell: عميل نقدي
+                      - cell: Supplies
+                      - cell: +‏٤٬٢٠٠٫٠٠ ج.م.‏
+                      - cell: —
+                      - cell:
+                        - button:
+                          - generic: عرض
+  - dialog:
+    - generic:
+      - heading [level=2]: تفاصيل المعاملة
+      - paragraph: مراجعة تفاصيل الفاتورة والمستند المرفق
+    - generic:
+      - generic:
+        - generic:
+          - generic: "المبلغ:"
+          - text: ‏٤٬٢٠٠٫٠٠ ج.م.‏
+        - generic:
+          - generic: "النوع:"
+          - generic: إيراد
+        - generic:
+          - generic: "التاريخ:"
+          - text: ٢٩ أغسطس ٢٠٢٦
+        - generic:
+          - generic: "التصنيف:"
+          - text: Supplies
+        - generic:
+          - generic: "التاجر / العميل:"
+          - text: عميل نقدي
+      - generic:
+        - button: حذف المعاملة
+        - button: تعديل البيانات
+    - button:
+      - generic: Close
+  - dialog [ref=f98e297]:
+    - generic [ref=f98e298]:
+      - heading "تأكيد حذف المعاملة" [level=2] [ref=f98e299]
+      - paragraph [ref=f98e300]: هل أنت متأكد من رغبتك في حذف هذه المعاملة نهائياً؟ لن تتمكن من التراجع عن هذا الإجراء.
+    - generic [ref=f98e301]:
+      - button "إلغاء" [active] [ref=f98e302] [cursor=pointer]
+      - button "تأكيد الحذف" [ref=f98e303] [cursor=pointer]
+    - button "Close" [ref=f98e304]

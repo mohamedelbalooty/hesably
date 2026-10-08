@@ -1,0 +1,126 @@
+- generic:
+  - button [ref=f1e146] [cursor=pointer]
+  - alert
+  - generic:
+    - complementary:
+      - generic:
+        - generic: ح
+        - generic:
+          - generic: حسابلي لوحة الويب
+          - generic: سوبرماركت الأمل
+      - navigation:
+        - generic: القائمة الرئيسية
+        - link:
+          - /url: /
+          - generic: نظرة عامة
+        - link:
+          - /url: /transactions
+          - generic: المعاملات
+        - link:
+          - /url: /reports
+          - generic: التقارير والإحصائيات
+        - link:
+          - /url: /categories
+          - generic: التصنيفات
+        - link:
+          - /url: /settings
+          - generic: الإعدادات
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: سوبرماركت الأمل
+              - generic: elamal.owner@hesably.com
+          - button:
+            - generic: تسجيل الخروج
+    - generic:
+      - banner:
+        - generic:
+          - generic:
+            - heading [level=1]: سجل المعاملات والفواتير
+        - generic:
+          - generic:
+            - generic: سوبرماركت الأمل
+            - generic: (retail)
+      - main:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=2]: سجل المعاملات
+              - paragraph: عرض، تصفية، تعديل، وحذف المعاملات المسجلة
+            - button:
+              - generic: إضافة معاملة يدوياً
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - textbox:
+                    - /placeholder: ابحث بالاسم أو التصنيف...
+                - combobox:
+                  - generic: كل الأنواع
+                - combobox:
+                  - generic: كل التصنيفات
+                - combobox:
+                  - generic: كل الأوقات
+          - generic:
+            - generic:
+              - generic:
+                - table:
+                  - rowgroup:
+                    - row:
+                      - columnheader: التاريخ
+                      - columnheader: النوع
+                      - columnheader: البيان / الطرف
+                      - columnheader: التصنيف
+                      - columnheader: المبلغ
+                      - columnheader: الفاتورة
+                      - columnheader: الإجراءات
+                  - rowgroup:
+                    - row:
+                      - cell: ٣٠ أغسطس ٢٠٢٦
+                      - cell:
+                        - generic: إيراد
+                      - cell: مبيعات اليوم - كاش
+                      - cell: Sales
+                      - cell: +‏٥٬٢٥٠٫٠٠ ج.م.‏
+                      - cell: —
+                      - cell:
+                        - button:
+                          - generic: عرض
+                    - row:
+                      - cell: ٣٠ أغسطس ٢٠٢٦
+                      - cell:
+                        - generic: مصروف
+                      - cell: مكتبة ومستلزمات القاهرة
+                      - cell: Supplies
+                      - cell: "-‏١٬٧٥٠٫٠٠ ج.م.‏"
+                      - cell:
+                        - generic: مرفقة
+                      - cell:
+                        - button:
+                          - generic: عرض
+  - dialog [ref=f1e148]:
+    - generic [ref=f1e149]:
+      - heading "تفاصيل المعاملة" [level=2] [ref=f1e150]
+      - paragraph [ref=f1e151]: مراجعة تفاصيل الفاتورة والمستند المرفق
+    - generic [ref=f1e152]:
+      - generic [ref=f1e153]:
+        - generic [ref=f1e154]:
+          - generic [ref=f1e155]: "المبلغ:"
+          - text: ‏١٬٧٥٠٫٠٠ ج.م.‏
+        - generic [ref=f1e156]:
+          - generic [ref=f1e157]: "النوع:"
+          - generic [ref=f1e158]: مصروف
+        - generic [ref=f1e159]:
+          - generic [ref=f1e160]: "التاريخ:"
+          - text: ٣٠ أغسطس ٢٠٢٦
+        - generic [ref=f1e161]:
+          - generic [ref=f1e162]: "التصنيف:"
+          - text: Supplies
+        - generic [ref=f1e163]:
+          - generic [ref=f1e164]: "التاجر / العميل:"
+          - text: مكتبة ومستلزمات القاهرة
+      - generic [ref=f1e165]:
+        - button "حذف المعاملة" [active] [ref=f1e166] [cursor=pointer]
+        - button "تعديل البيانات" [ref=f1e167] [cursor=pointer]
+    - button "Close" [ref=f1e168]
